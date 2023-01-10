@@ -1,0 +1,56 @@
+.tag-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.tag {
+    color: #000;
+    display: inline-block;
+    text-align: center;
+    background-color: $tertiary-color;
+    width: 28%;
+    padding: 3px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    transition: filter 0.5s;
+
+    &:hover {
+        filter: brightness(1.5);
+    }
+}
+
+.tag-icon {
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    border-radius: 5px;
+    margin: 5px;
+    transition: 0.5s;
+
+    img, span, a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+.icon {
+    filter: invert(50%) sepia(20%) saturate(421%) hue-rotate(209deg) brightness(97%) contrast(90%);
+}
+
+.yellow-circle {
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 0.1rem solid;
+    border-radius: 50%;
+    background-color: #E7DE79;
+}
+
+.tag-language {
+    margin-left: auto;
+}
